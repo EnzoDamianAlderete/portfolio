@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/img/EDAlogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Enzo Alderete Portfolio</title>
+</head>
+<body>
+
+  <div id="cursor" class="cursor"></div>
+
+  <div class="body-container">
+        <nav class="navbar">
+          <div class="navbar-overlay"
+          onclick="toggleMenuOpen()"
+          ></div>
+  
+          <button
+          type="button"
+          class="navbar-burguer"
+          onclick="toggleMenuOpen()"
+          >
+          <span class="material-icons"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg></span>
+  
+          </button>
+  
+          <a href="#" class="navbar-title">
+
+          <img id="logo" src="./img/EDAlogo.png" alt="EA">
+          </a>
+              <nav class="navbar-menu">
+                <a 
+                  onclick="menuClose()"
+                  href="#">Inicio</a>
+                  <a 
+                  onclick="menuClose()"
+                  href="#sobreMi">Sobre mi</a>
+                  <a 
+                  onclick="menuClose()"
+                  href="#habilidades">Habilidades</a>
+                  <a 
+                  onclick="menuClose()"
+                  href="#proyectos">Proyectos</a>
+                  <a 
+                  onclick="menuClose()"
+                  href="#contacto">Contacto</a>
+                  <button
+                  onclick="menuClose()"
+                  id="x"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                  </svg></button>
+              </nav>
+      </nav>    
+    <header class="header--container">
+      <div class="title glass">
+        <img class="avatar"src="/img/avatar-01.jpeg" alt="yop">
+        <h1><span>Enzo Alderete 
+          <br>
+          Front End Developer</span></h1>
+      </div>
+
+      <div class="welcome-text glass">
+          <p>Bienvenido a mi portfolio web! Aqui podras conocer un poco sobre mi, mis experiencias como programador, mis habilidades. Espero que podamos trabajar juntos y hacer un gran equipo! 🚀</p>
+      </div>
+  
+      <div class="buttons">
+  
+        <button class="download-button"
+        onclick="location.href='#contacto'"
+        >
+          <div class="docs"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+          </svg>Contactame</div>
+          <div class="download">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-envelope-paper" viewBox="0 0 16 16">
+              <path d="M4 0a2 2 0 0 0-2 2v1.133l-.941.502A2 2 0 0 0 0 5.4V14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5.4a2 2 0 0 0-1.059-1.765L14 3.133V2a2 2 0 0 0-2-2H4Zm10 4.267.47.25A1 1 0 0 1 15 5.4v.817l-1 .6v-2.55Zm-1 3.15-3.75 2.25L8 8.917l-1.25.75L3 7.417V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v5.417Zm-11-.6-1-.6V5.4a1 1 0 0 1 .53-.882L2 4.267v2.55Zm13 .566v5.734l-4.778-2.867L15 7.383Zm-.035 6.88A1 1 0 0 1 14 15H2a1 1 0 0 1-.965-.738L8 10.083l6.965 4.18ZM1 13.116V7.383l4.778 2.867L1 13.117Z"/>
+            </svg>
+          </div>
+        </button>
+
+        <a download="CV-EnzoAlderete" href="/prueba.pdf" class="download-button">
+          <div class="docs"><svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="20" width="20" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line y2="13" x2="8" y1="13" x1="16"></line><line y2="17" x2="8" y1="17" x1="16"></line><polyline points="10 9 9 9 8 9"></polyline></svg> Descarga CV</div>
+          <div class="download">
+            <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="24" width="24" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line y2="3" x2="12" y1="15" x1="12"></line></svg>
+          </div>
+        </a>
+  
+      </div>
+
+    </header>
+
+    <section id="sobreMi" >
+      <div class="sobreMi container" data-aos="fade-up" data-aos-duration="1200">
+        <h2>Sobre Mi 🐱‍🏍</h2>
+
+        <div class="sobreMi--presentacion">
+
+          
+          <div class="card--prueba card--sobreMi">
+            <img src="/img/avatar-04.jpeg" alt="avatar">
+            <h3>Enzo Alderete</h3>
+            <h4>Web developer</h4>
+
+            <ul>
+              <li>Javascript-💛</li>
+              <li>Animal lover-🐶💖🐱</li>
+              <li>Deportista-🏀⚽🏐</li>
+              <li>Argentina-🌞</li>
+            </ul>
+          </div>
+
+          <p class="sobremi-text" >👋Hola! me llamo <span>Enzo</span> y soy <span>FrontEnd Developer</span>🚀, estudo Licenciatura en Sistemas de información en la Universidad Nacional del Nordeste (UNNE), en <span>Ar</span>ge<span class="n" >n</span>ti<span>na</span>.
+          Desde que empece a aprender a programar con cursos y de manera autodidacta, me estoy especializando en el <span>FrontEnd</span> y también estoy aprendiendo tecnologías del backend para tener un perfil <span>fullstack</span>.<br>
+          Fuera de la programacion me encanta hacer <span>deportes</span>, juego voleyball🏐, futbol⚽ y basquet🏀. <br>
+          Además me encanta pasar tiempo con mis mascotas, adoro a los <span>animales</span>, tengo 3 perritos🐶 y una gata🐱.</p>
+        </div>
+      </div>
+
+        
+    </section>
+
+    <section id="habilidades" >
+      <div class="Habilidades">
+        <h2>Habilidades⭐</h2> 
+
+        <p class="container">Enumerando mis habilidades blandas puedo listar: 
+        </p>
+
+       <div class="softSkills container" data-aos="zoom-in">
+          <span class="softSkill"> 📌Formación continua</span>
+          <span class="softSkill">📌Perseverancia</span>
+          <span class="softSkill">📌Proactividad</span><span class="softSkill">📌Creatividad</span>
+          <span class="softSkill">📌Resolucion de problemas</span>
+           <span class="softSkill">📌Adaptabilidad</span>  
+          <span class="softSkill">📌Disposición al cambio</span> <span class="softSkill">📌Aceptación de lo nuevo</span>
+          <span class="softSkill">📌Profesionalidad</span>
+          <span class="softSkill">📌Trabajo en equipo</span>
+      </div>
+          
+
+
+        <p class="container">Si bien mi formacion como desarrollador se centra en el FrontEnd actualmente me encuentro ampliando mis horizontes en el ambiente del backend para ser un fullstack developer aprendiendo tecnologias como node.js, express, bases de datos, entre otros.</p>
+      </div>
+
+      <h2 style="padding-top: 2rem;">Tecnologias 👨‍💻</h2>
+
+      <div class="tecnologias container">
+        <div class="tecnologia">
+          <div class="bg-white-icons"></div>
+          <img src="./img/icons/SVG/html5.svg" alt="html">
+          <p>HTML</p>
+        </div>
+
+        <div class="tecnologia">
+          <div class="bg-white-icons"></div>
+          <img src="./img/icons/SVG/css3.svg" alt="css">
+          <p>CSS3</p>
+        </div>
+
+        <div class="tecnologia">
+          <img src="./img/icons/SVG/javascript.svg" alt="js">
+          <p>JavaScript</p>
+        </div>
+
+        <div class="tecnologia">
+          
+          <img src="./img/icons/SVG/react.svg" alt="js">
+          <p>React</p>
+        </div>
+
+        <div class="tecnologia">
+          <img src="./img/icons/SVG/node-dot-js.svg" alt="js">
+          <p>Node.js</p>
+        </div>
+
+        <div class="tecnologia">
+          <img src="./img/icons/SVG/mongodb.svg" alt="mongodb">
+          <p>Mongodb</p>
+        </div>
+
+        <div class="tecnologia">
+          <img src="./img/icons/SVG/mysql.svg" alt="mysql">
+          <p>Mysql</p>
+        </div>
+
+        <div class="tecnologia">
+          <img src="./img/icons/SVG/mysql.svg" alt="mysql">
+          <p>Mysql</p>
+        </div>
+
+        <div class="tecnologia">
+          <img src="./img/icons/SVG/tailwindcss.svg" alt="tailwindcss">
+          <p>Tailwindcss</p>
+        </div>
+
+        <div class="tecnologia">
+          <div class="bg-white-icons"></div>
+          <img src="./img/icons/SVG/bootstrap.svg" alt="bootstrap">
+          <p>Bootstrap</p>
+        </div>
+
+      </div>
+      
+    </section>
+
+    <section id="proyectos" class="proyectos--seccion ">
+      <h2 id="title--proyectos">Proyectos 💼</h2>
+      <div class="proyectos">
+
+        <div class="card-project" data-aos="fade-up"
+        data-aos-duration="1300">
+          <div class="card-project-img bg--proyecto5"></div>
+            <div class="card-project-info">
+              <p class="text-title">NotesApp</p>
+              <p class="text-body">App web fullstack que permite crear usuario e iniciar sesion, crear notas.</p>
+              
+              <p class="legend-responsive">Responsive <svg  fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.584 3.088a3.613 3.613 0 0 0-5.168 0l-.777.797-1.113-.014a3.613 3.613 0 0 0-3.655 3.655l.013 1.113-.795.777a3.612 3.612 0 0 0 0 5.168l.796.777-.014 1.113a3.613 3.613 0 0 0 3.655 3.655l1.113-.013.777.795a3.612 3.612 0 0 0 5.168 0l.777-.796 1.113.014a3.612 3.612 0 0 0 3.655-3.655l-.013-1.113.795-.777a3.612 3.612 0 0 0 0-5.168l-.796-.777.014-1.113a3.612 3.612 0 0 0-3.655-3.655l-1.113.013-.777-.795v-.001Zm.359 7.48-3.75 3.75a.625.625 0 0 1-.886 0l-1.875-1.875a.626.626 0 0 1 .885-.885l1.433 1.433 3.307-3.308a.626.626 0 0 1 .886.885Z"></path>
+              </svg></p>
+              <div class="description--skillUsed">
+                <p><svg width="10" height="10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 15v4h3v2H8v-2h3v-4H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-7Zm-8-2h14V5H5v8Zm3-5h8v2H8V8Z"></path>
+                </svg> FrontEnd & BackEnd/ Fullstack</p>
+                
+                <div class="description--tecnologias">
+                  <p style="font-size: 13px;">Tecnologias:</p>
+                  <img src="./img/icons/SVG/react.svg" alt="react">
+                  <img src="./img/icons/SVG/node-dot-js.svg" alt="node">
+                  <img src="./img/icons/SVG/tailwindcss.svg" alt="tailwindcss">
+                </div>
+                
+              </div>
+              
+            </div>
+            <div class="card-project-footer">
+            
+              <a href="#" class="btnGit">Ver repositorio
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 1.5C6.202 1.5 1.5 6.323 1.5 12.267c0 4.758 3.01 8.79 7.181 10.214a.82.82 0 0 0 .178.019c.39 0 .54-.286.54-.534 0-.258-.01-.933-.015-1.833a4.802 4.802 0 0 1-1.059.126c-2.02 0-2.48-1.57-2.48-1.57-.478-1.242-1.167-1.575-1.167-1.575-.914-.642-.005-.66.066-.66h.004c1.055.093 1.608 1.115 1.608 1.115.525.919 1.228 1.176 1.857 1.176a2.953 2.953 0 0 0 1.2-.28c.093-.695.365-1.168.665-1.44-2.33-.272-4.781-1.195-4.781-5.32 0-1.177.408-2.138 1.078-2.888-.108-.272-.469-1.369.103-2.85a.874.874 0 0 1 .235-.023c.38 0 1.237.145 2.653 1.13a9.76 9.76 0 0 1 5.259 0c1.416-.985 2.273-1.13 2.653-1.13a.873.873 0 0 1 .235.023c.571 1.481.21 2.578.103 2.85.67.755 1.078 1.716 1.078 2.888 0 4.134-2.456 5.043-4.796 5.31.375.333.713.99.713 1.993 0 1.439-.014 2.601-.014 2.953 0 .253.145.539.534.539a.9.9 0 0 0 .188-.019c4.176-1.425 7.181-5.46 7.181-10.214C22.5 6.323 17.798 1.5 12 1.5Z"></path>
+                </svg>
+              </a>
+
+              <a href="#" class="btnGit">Visitar proyecto
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 11.64a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
+                  <path d="M2.4 11.64S6 5.04 12 5.04s9.6 6.6 9.6 6.6-3.6 6.6-9.6 6.6-9.6-6.6-9.6-6.6Zm9.6 4.2a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4Z"></path>
+                </svg>
+              </a>
+
+            </div>
+        </div>
+
+        <div class="card-project" data-aos="fade-up"
+        data-aos-duration="1300">
+          <div class="card-project-img"></div>
+            <div class="card-project-info">
+              <p class="text-title">Instagram Clon</p>
+              <p class="text-body">Maqueta de Instagram, desarrollado con Reat y estilado con css.</p>
+              
+              <div class="description--skillUsed">
+                <p><svg width="10" height="10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 15v4h3v2H8v-2h3v-4H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-7Zm-8-2h14V5H5v8Zm3-5h8v2H8V8Z"></path>
+                </svg> FrontEnd</p>
+                <p>Fecth Api</p>
+                <div class="description--tecnologias">
+                  <p style="font-size: 13px;">Tecnologias:</p>
+                  <img src="./img/icons/SVG/react.svg" alt="react">
+                  <img src="./img/icons/SVG/css3.svg" alt="css">
+                </div>
+                
+              </div>
+              
+            </div>
+            <div class="card-project-footer">
+            
+              <a href="#" class="btnGit">Ver repositorio
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 1.5C6.202 1.5 1.5 6.323 1.5 12.267c0 4.758 3.01 8.79 7.181 10.214a.82.82 0 0 0 .178.019c.39 0 .54-.286.54-.534 0-.258-.01-.933-.015-1.833a4.802 4.802 0 0 1-1.059.126c-2.02 0-2.48-1.57-2.48-1.57-.478-1.242-1.167-1.575-1.167-1.575-.914-.642-.005-.66.066-.66h.004c1.055.093 1.608 1.115 1.608 1.115.525.919 1.228 1.176 1.857 1.176a2.953 2.953 0 0 0 1.2-.28c.093-.695.365-1.168.665-1.44-2.33-.272-4.781-1.195-4.781-5.32 0-1.177.408-2.138 1.078-2.888-.108-.272-.469-1.369.103-2.85a.874.874 0 0 1 .235-.023c.38 0 1.237.145 2.653 1.13a9.76 9.76 0 0 1 5.259 0c1.416-.985 2.273-1.13 2.653-1.13a.873.873 0 0 1 .235.023c.571 1.481.21 2.578.103 2.85.67.755 1.078 1.716 1.078 2.888 0 4.134-2.456 5.043-4.796 5.31.375.333.713.99.713 1.993 0 1.439-.014 2.601-.014 2.953 0 .253.145.539.534.539a.9.9 0 0 0 .188-.019c4.176-1.425 7.181-5.46 7.181-10.214C22.5 6.323 17.798 1.5 12 1.5Z"></path>
+                </svg>
+              </a>
+
+              <a href="#" class="btnGit">Visitar proyecto
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 11.64a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
+                  <path d="M2.4 11.64S6 5.04 12 5.04s9.6 6.6 9.6 6.6-3.6 6.6-9.6 6.6-9.6-6.6-9.6-6.6Zm9.6 4.2a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4Z"></path>
+                </svg>
+              </a>
+
+            </div>
+        </div>
+
+        <div
+         class="card-project" data-aos="fade-down"
+         data-aos-duration="1300">
+          <div class="card-project-img bg--proyecto2"></div>
+            <div class="card-project-info">
+              <h3>Clima app</h3>
+              <p class="text-body">App web muestra el pronostico del clima de los proximos 3 dias.</p>
+              <p class="legend-responsive">Responsive <svg  fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.584 3.088a3.613 3.613 0 0 0-5.168 0l-.777.797-1.113-.014a3.613 3.613 0 0 0-3.655 3.655l.013 1.113-.795.777a3.612 3.612 0 0 0 0 5.168l.796.777-.014 1.113a3.613 3.613 0 0 0 3.655 3.655l1.113-.013.777.795a3.612 3.612 0 0 0 5.168 0l.777-.796 1.113.014a3.612 3.612 0 0 0 3.655-3.655l-.013-1.113.795-.777a3.612 3.612 0 0 0 0-5.168l-.796-.777.014-1.113a3.612 3.612 0 0 0-3.655-3.655l-1.113.013-.777-.795v-.001Zm.359 7.48-3.75 3.75a.625.625 0 0 1-.886 0l-1.875-1.875a.626.626 0 0 1 .885-.885l1.433 1.433 3.307-3.308a.626.626 0 0 1 .886.885Z"></path>
+              </svg></p>
+              
+              <div class="description--skillUsed">
+                <p><svg width="10" height="10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 15v4h3v2H8v-2h3v-4H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-7Zm-8-2h14V5H5v8Zm3-5h8v2H8V8Z"></path>
+                </svg> FrontEnd</p>
+                <p>Fecth Api</p>
+                <div class="description--tecnologias">
+                  <p style="font-size: 13px;">Tecnologias:</p>
+                  <img src="./img/icons/SVG/react.svg" alt="react">
+                  <img src="./img/icons/SVG/css3.svg" alt="css">
+                </div>
+                
+              </div>
+              
+            </div>
+            <div class="card-project-footer">
+            
+              <a href="#" class="btnGit">Ver repositorio
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 1.5C6.202 1.5 1.5 6.323 1.5 12.267c0 4.758 3.01 8.79 7.181 10.214a.82.82 0 0 0 .178.019c.39 0 .54-.286.54-.534 0-.258-.01-.933-.015-1.833a4.802 4.802 0 0 1-1.059.126c-2.02 0-2.48-1.57-2.48-1.57-.478-1.242-1.167-1.575-1.167-1.575-.914-.642-.005-.66.066-.66h.004c1.055.093 1.608 1.115 1.608 1.115.525.919 1.228 1.176 1.857 1.176a2.953 2.953 0 0 0 1.2-.28c.093-.695.365-1.168.665-1.44-2.33-.272-4.781-1.195-4.781-5.32 0-1.177.408-2.138 1.078-2.888-.108-.272-.469-1.369.103-2.85a.874.874 0 0 1 .235-.023c.38 0 1.237.145 2.653 1.13a9.76 9.76 0 0 1 5.259 0c1.416-.985 2.273-1.13 2.653-1.13a.873.873 0 0 1 .235.023c.571 1.481.21 2.578.103 2.85.67.755 1.078 1.716 1.078 2.888 0 4.134-2.456 5.043-4.796 5.31.375.333.713.99.713 1.993 0 1.439-.014 2.601-.014 2.953 0 .253.145.539.534.539a.9.9 0 0 0 .188-.019c4.176-1.425 7.181-5.46 7.181-10.214C22.5 6.323 17.798 1.5 12 1.5Z"></path>
+                </svg>
+              </a>
+
+              <a href="#" class="btnGit">Visitar proyecto
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 11.64a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
+                  <path d="M2.4 11.64S6 5.04 12 5.04s9.6 6.6 9.6 6.6-3.6 6.6-9.6 6.6-9.6-6.6-9.6-6.6Zm9.6 4.2a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4Z"></path>
+                </svg>
+              </a>
+
+            </div>
+        </div>
+
+        <div class="card-project" data-aos="fade-up"
+         data-aos-duration="1300">
+          <div class="card-project-img bg--proyecto3"></div>
+            <div class="card-project-info">
+              <h3>Ta te ti</h3>
+              <p class="text-body">Juego clasico de tateti hecho con  HTML CSS y vanilla javascript.</p>
+            
+              <p class="legend-responsive">Responsive <svg  fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.584 3.088a3.613 3.613 0 0 0-5.168 0l-.777.797-1.113-.014a3.613 3.613 0 0 0-3.655 3.655l.013 1.113-.795.777a3.612 3.612 0 0 0 0 5.168l.796.777-.014 1.113a3.613 3.613 0 0 0 3.655 3.655l1.113-.013.777.795a3.612 3.612 0 0 0 5.168 0l.777-.796 1.113.014a3.612 3.612 0 0 0 3.655-3.655l-.013-1.113.795-.777a3.612 3.612 0 0 0 0-5.168l-.796-.777.014-1.113a3.612 3.612 0 0 0-3.655-3.655l-1.113.013-.777-.795v-.001Zm.359 7.48-3.75 3.75a.625.625 0 0 1-.886 0l-1.875-1.875a.626.626 0 0 1 .885-.885l1.433 1.433 3.307-3.308a.626.626 0 0 1 .886.885Z"></path>
+              </svg></p>
+              <div class="description--skillUsed">
+                <p><svg width="10" height="10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 15v4h3v2H8v-2h3v-4H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-7Zm-8-2h14V5H5v8Zm3-5h8v2H8V8Z"></path>
+                </svg> FrontEnd</p>
+                <div class="description--tecnologias">
+                  <p style="font-size: 13px;">Tecnologias:</p>
+                <img src="./img/icons/SVG/html5.svg" alt="html">
+                <img src="./img/icons/SVG/css3.svg" alt="css">
+                <img src="./img/icons/SVG/javascript.svg" alt="js">
+                </div>
+                
+              </div>
+              
+            </div>
+            <div class="card-project-footer">
+            
+              <a href="#" class="btnGit">Ver repositorio
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 1.5C6.202 1.5 1.5 6.323 1.5 12.267c0 4.758 3.01 8.79 7.181 10.214a.82.82 0 0 0 .178.019c.39 0 .54-.286.54-.534 0-.258-.01-.933-.015-1.833a4.802 4.802 0 0 1-1.059.126c-2.02 0-2.48-1.57-2.48-1.57-.478-1.242-1.167-1.575-1.167-1.575-.914-.642-.005-.66.066-.66h.004c1.055.093 1.608 1.115 1.608 1.115.525.919 1.228 1.176 1.857 1.176a2.953 2.953 0 0 0 1.2-.28c.093-.695.365-1.168.665-1.44-2.33-.272-4.781-1.195-4.781-5.32 0-1.177.408-2.138 1.078-2.888-.108-.272-.469-1.369.103-2.85a.874.874 0 0 1 .235-.023c.38 0 1.237.145 2.653 1.13a9.76 9.76 0 0 1 5.259 0c1.416-.985 2.273-1.13 2.653-1.13a.873.873 0 0 1 .235.023c.571 1.481.21 2.578.103 2.85.67.755 1.078 1.716 1.078 2.888 0 4.134-2.456 5.043-4.796 5.31.375.333.713.99.713 1.993 0 1.439-.014 2.601-.014 2.953 0 .253.145.539.534.539a.9.9 0 0 0 .188-.019c4.176-1.425 7.181-5.46 7.181-10.214C22.5 6.323 17.798 1.5 12 1.5Z"></path>
+                </svg>
+              </a>
+
+              <a  target="_blank" href="https://practicadesarrolloweb1.000webhostapp.com/" class="btnGit">Visitar proyecto
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 11.64a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
+                  <path d="M2.4 11.64S6 5.04 12 5.04s9.6 6.6 9.6 6.6-3.6 6.6-9.6 6.6-9.6-6.6-9.6-6.6Zm9.6 4.2a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4Z"></path>
+                </svg>
+              </a>
+
+            </div>
+        </div>
+        
+        <div class="card-project" class="card-project" data-aos="fade-down"data-aos-duration="1300">
+          <div class="card-project-img bg--proyecto4"></div>
+            <div class="card-project-info">
+              <h3>Portfolio web</h3>
+              <p class="text-body">Portfolio web personal desarrollado con HTML CSS y JavaScript.</p>
+              
+              <p class="legend-responsive">Responsive <svg  fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.584 3.088a3.613 3.613 0 0 0-5.168 0l-.777.797-1.113-.014a3.613 3.613 0 0 0-3.655 3.655l.013 1.113-.795.777a3.612 3.612 0 0 0 0 5.168l.796.777-.014 1.113a3.613 3.613 0 0 0 3.655 3.655l1.113-.013.777.795a3.612 3.612 0 0 0 5.168 0l.777-.796 1.113.014a3.612 3.612 0 0 0 3.655-3.655l-.013-1.113.795-.777a3.612 3.612 0 0 0 0-5.168l-.796-.777.014-1.113a3.612 3.612 0 0 0-3.655-3.655l-1.113.013-.777-.795v-.001Zm.359 7.48-3.75 3.75a.625.625 0 0 1-.886 0l-1.875-1.875a.626.626 0 0 1 .885-.885l1.433 1.433 3.307-3.308a.626.626 0 0 1 .886.885Z"></path>
+              </svg></p>
+              <div class="description--skillUsed">
+                <p><svg width="10" height="10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 15v4h3v2H8v-2h3v-4H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-7Zm-8-2h14V5H5v8Zm3-5h8v2H8V8Z"></path>
+                </svg> FrontEnd</p>
+                <div class="description--tecnologias">
+                  <p style="font-size: 13px;">Tecnologias:</p>
+                <img src="./img/icons/SVG/html5.svg" alt="html">
+                <img src="./img/icons/SVG/css3.svg" alt="css">
+                <img src="./img/icons/SVG/javascript.svg" alt="js">
+                </div>
+                
+              </div>
+              
+            </div>
+            <div class="card-project-footer">
+            
+              <a href="#" class="btnGit">Ver repositorio
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 1.5C6.202 1.5 1.5 6.323 1.5 12.267c0 4.758 3.01 8.79 7.181 10.214a.82.82 0 0 0 .178.019c.39 0 .54-.286.54-.534 0-.258-.01-.933-.015-1.833a4.802 4.802 0 0 1-1.059.126c-2.02 0-2.48-1.57-2.48-1.57-.478-1.242-1.167-1.575-1.167-1.575-.914-.642-.005-.66.066-.66h.004c1.055.093 1.608 1.115 1.608 1.115.525.919 1.228 1.176 1.857 1.176a2.953 2.953 0 0 0 1.2-.28c.093-.695.365-1.168.665-1.44-2.33-.272-4.781-1.195-4.781-5.32 0-1.177.408-2.138 1.078-2.888-.108-.272-.469-1.369.103-2.85a.874.874 0 0 1 .235-.023c.38 0 1.237.145 2.653 1.13a9.76 9.76 0 0 1 5.259 0c1.416-.985 2.273-1.13 2.653-1.13a.873.873 0 0 1 .235.023c.571 1.481.21 2.578.103 2.85.67.755 1.078 1.716 1.078 2.888 0 4.134-2.456 5.043-4.796 5.31.375.333.713.99.713 1.993 0 1.439-.014 2.601-.014 2.953 0 .253.145.539.534.539a.9.9 0 0 0 .188-.019c4.176-1.425 7.181-5.46 7.181-10.214C22.5 6.323 17.798 1.5 12 1.5Z"></path>
+                </svg>
+              </a>
+
+              <a href="#" class="btnGit">Visitar proyecto
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 11.64a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
+                  <path d="M2.4 11.64S6 5.04 12 5.04s9.6 6.6 9.6 6.6-3.6 6.6-9.6 6.6-9.6-6.6-9.6-6.6Zm9.6 4.2a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4Z"></path>
+                </svg>
+              </a>
+
+            </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto container">
+
+        <h2>Contacto</h2>
+
+        <p>Pudes contactarme Rellenando el siguiente formulario o en mis redes sociales:</p>
+
+        <div class="conteiner-contacts">
+
+          <form action="" class="formulario">
+
+            <div class="form__group field">
+              <input required=""
+               placeholder="Name"
+               class="form__field" 
+               type="input">
+              <label class="form__label" for="name">Nombre</label>
+            </div>
+            <div class="form__group field">
+              <input required="" placeholder="Email" class="form__field" type="input">
+              <label class="form__label" for="name">Email</label>
+            </div>
+  
+            <div class="form__group field">
+              <textarea class="form__field" cols="25" rows="6"></textarea>
+              <label class="form__label" for="name" required>Mensaje</label>
+            </div>
+  
+            <button id="button-submit">
+              <div class="svg-wrapper-1">
+                <div class="svg-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                  </svg>
+                </div>
+              </div>
+              <span>Send</span>
+            </button>
+  
+          </form>
+  
+          <div class="info-contact" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1200">
+            <h4>Redes sociales:</h4>
+            
+            <a href="https://github.com/EnzoDamianAlderete" 
+            target="_blank"
+            class="red-social github">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+              Github
+            </a>
+            <a href="https://www.linkedin.com/in/enzo-alderete-30014a211/"
+            target="_blank"
+            class="red-social linkedin">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              </svg>
+              LinkedIn</a>
+            <a href="https://www.facebook.com/enzo.alderete.3" 
+            target="_blank"
+            class="red-social fb">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg>
+              Facebook</a>
+            <a href="https://www.instagram.com/enzo.alderete_/" 
+            target="_blank"
+            class="red-social ig">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg>
+              Instagram
+            </a>
+  
+          </div>
+
+        </div>
+
+        
+
+
+
+    </section>
+
+
+  <!-- --------PARTICLES------------ -->
+  <div id="particles-js"></div>
+
+  <footer>
+    <div class="footer container">
+      <div class="footer--secciones">
+        <a href="#">Inicio</a>
+        <a href="#sobreMi">Sobre mi</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div>
+        <h5>Tecnologias:</h5>
+        
+        <p>📌HTML</p>
+        <p>📌CSS</p>
+        <p>📌Javascript</p>
+        <p>📌React.js</p>
+        <p>📌Node.js</p>
+        
+      </div>
+
+      <div>
+        <h5>Frameworks: </h5>
+          <p>📌Nextjs</p>
+          <p>📌Boostrap</p>
+          <p>📌Express</p>
+          <p>📌Taildwincss</p>
+      </div>
+
+      <div>
+        <h5>Contacto:</h5>
+
+        <div class="icons">
+
+          <a href="https://www.linkedin.com/in/enzo-alderete-30014a211/"
+          target="_blank">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+            </svg>
+          </a>
+          
+  
+          <a href="https://github.com/EnzoDamianAlderete"
+          target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
+          
+          <a href="https://www.facebook.com/enzo.alderete.3"
+          target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg>
+          </a>
+          
+        </div>
+
+      </div>
+      
+    </div>
+    
+    <legend>Copyright 2022. Enzo Alderete FrontEnd Developer🪐. Todos los derechos reservados.</legend>
+  </footer>
+    
+
+  </div>
+
+    
+    <script src="particles.min.js"></script>
+    <script>
+        particlesJS({
+          "particles": {
+            "number": {
+              "value": 62,
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": "#ffffff"
+            },
+            "shape": {
+              "type": "circle",
+              "stroke": {
+                "width": 0,
+                "color": "#000000"
+              },
+              "polygon": {
+                "nb_sides": 5
+              },
+              "image": {
+                "src": "img/github.svg",
+                "width": 100,
+                "height": 100
+              }
+            },
+            "opacity": {
+              "value": 0.5,
+              "random": false,
+              "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+              }
+            },
+            "size": {
+              "value": 3,
+              "random": true,
+              "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+              }
+            },
+            "line_linked": {
+              "enable": true,
+              "distance": 150,
+              "color": "#fff",
+              "opacity": 0.6,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 2,
+              "direction": "none",
+              "random": false,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false,
+              "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+              }
+            }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": false,
+                "mode": "repulse"
+              },
+              "onclick": {
+                "enable": false,
+                "mode": "push"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 400,
+                "line_linked": {
+                  "opacity": 1
+                }
+              },
+              "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+              },
+              "repulse": {
+                "distance": 200,
+                "duration": 0.4
+              },
+              "push": {
+                "particles_nb": 4
+              },
+              "remove": {
+                "particles_nb": 2
+              }
+            }
+          },
+          "retina_detect": true
+      })
+    </script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".glass"), {
+            max: 25,
+            speed: 400,
+                glare:true,
+                "max-glare":1
+          });
+    </script>
+  
+  <script type="text/javascript">
+    const toggleMenuOpen = () =>document.body.classList.toggle("open");
+    const menuClose=()=> document.body.classList.remove("open");
+  </script>
+
+  <script type="text/javascript">
+    const cursor = document.querySelector(".cursor");
+    var timeout;
+
+    document.addEventListener("mousemove", (e) =>{
+      let x = e.pageX;
+      let y = e.pageY;
+
+      cursor.style.top = y + "px";
+      cursor.style.left = x + "px";
+      cursor.style.display = "block";
+
+      function mouseStopped(){
+        cursor.style.display = "none";
+      }
+      clearTimeout(timeout);
+      timeout = setTimeout(mouseStopped, 3000);
+
+    });
+
+    document.addEventListener("mouseout", ()=>{
+      cursor.style.display = "none";
+    })
+  </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
