@@ -1046,7 +1046,7 @@ h1 span{
     font-weight: bold;
 }
 .red-social:hover{
-    border: 2px solid #f6d749 ;
+    border: 2px solid #fbde5bea ;
     color: #f6d749;
 }
 
@@ -1062,11 +1062,11 @@ h1 span{
 .ig:hover{
     background-color: #7e06a3;
 }
-.fb{
-    background-color: #03306c;
+.wpp{
+    background-color: #05ad19;
 }
-.fb:hover{
-    background-color: #01152e;
+.wpp:hover{
+    background-color: #046e11;
 }
 .linkedin{
     background-color: #046af1;
