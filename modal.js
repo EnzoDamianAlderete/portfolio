@@ -13,6 +13,12 @@ const closeModal4 = document.getElementById('closeModal4');
 const openModalProyect5 = document.getElementById('openModalProyect5');
 const modal5 = document.getElementById('modal5');
 const closeModal5 = document.getElementById('closeModal5');
+const openModalProyect6 = document.getElementById('openModalProyect6');
+const modal6 = document.getElementById('modal6');
+const closeModal6 = document.getElementById('closeModal6');
+const openModalProyect7 = document.getElementById('openModalProyect7');
+const modal7 = document.getElementById('modal7');
+const closeModal7 = document.getElementById('closeModal7');
 
 openModalProyect1.addEventListener('click',(e)=>{
     e.preventDefault();
@@ -59,4 +65,23 @@ openModalProyect5.addEventListener('click',(e)=>{
 closeModal5.addEventListener('click',(e)=>{
     e.preventDefault();
     modal5.classList.remove('modal--show');
+});
+
+openModalProyect6.addEventListener('click',(e)=>{
+    e.preventDefault();
+    modal6.classList.add('modal--show');
+});
+
+closeModal6.addEventListener('click',(e)=>{
+    e.preventDefault();
+    modal6.classList.remove('modal--show');
+});
+openModalProyect7.addEventListener('click',(e)=>{
+    e.preventDefault();
+    modal7.classList.add('modal--show');
+});
+
+closeModal7.addEventListener('click',(e)=>{
+    e.preventDefault();
+    modal7.classList.remove('modal--show');
 });

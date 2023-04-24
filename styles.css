@@ -91,7 +91,9 @@ h2{
 /*NAVBAR*/
 
 nav a:hover{
-    color: #2696e8;
+    color: #28bdea;
+    filter: drop-shadow(1px 4px 10px #2483a0);
+    cursor: pointer;
 }
 .active{
     color: #2696e8;
@@ -815,6 +817,12 @@ h1 span{
 }
 .bg--proyecto6 {
     background-image: url("./img/proyectos/proyecto-weatherApp.jpg");
+}
+.bg--proyecto7 {
+    background-image: url("./img/proyectos/proyecto-frontend-store-card.jpg");
+}
+.bg--proyecto8 {
+    background-image: url("./img/proyectos/proyecto-codingclothes-card.jpg");
 }
 
 .card-project-info {
